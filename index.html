@@ -15,8 +15,26 @@
     <script defer src="js/script.js"></script>
 </head>
 <body>
+    <div class="border">
+        <div>
+            <label for="kmTrip">Quanti chilometri vorresti percorrere?</label>
+            <input id="kmTrip" type="number" name="kmTrip" value="" placeholder="Km">
+        </div>
+        <div class="border">
+            <label for="userAge">Età</label>
+            <select id="userAge" name="userAge">
 
-    
+                <option value="young">Minorenne</option>
+                <option value="senior">Over 65</option>
+                <option value="">Maggiorenne</option>
+
+            </select>
+        </div>
+
+        <button id="ticketGenerator" type="button" name="ticketGenerator">Crea</button>
+    </div>
+
+
     
 </body>
 </html>
