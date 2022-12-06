@@ -39,5 +39,15 @@ ticketGenerator.addEventListener("click", function() {
     document.getElementById('passenger').innerHTML = name;
     document.getElementById('priceTrip').innerHTML = priceTrip;
 
+    let minCarriage = 1;
+    let maxCarriage = 8;
+  
+    let Carriage = Math.floor(Math.random() * (maxCarriage - minCarriage + 1)) + minCarriage;
+
+
+    document.getElementById('carriage').innerHTML = Carriage;
+
+ 
+
 
 })
