@@ -29,9 +29,18 @@ ticketGenerator.addEventListener("click", function() {
 
     if (userAge == "young") {
         priceTrip = (priceTrip * 0.8).toFixed(2) + "€";
+
+        document.getElementById('offer').innerHTML = "Biglietto Young";
+
+
     } else if (userAge == "senior") {
-        priceTrip = (priceTrip * 0.6).toFixed(2);
-    }       
+        priceTrip = (priceTrip * 0.6).toFixed(2) + "€";
+
+        document.getElementById('offer').innerHTML = "Biglietto Senior";
+    }  else {
+        document.getElementById('offer').innerHTML = "Biglietto Standard";
+
+    }     
     
     console.log(priceTrip);
 
@@ -46,6 +55,20 @@ ticketGenerator.addEventListener("click", function() {
 
 
     document.getElementById('carriage').innerHTML = Carriage;
+
+
+    let minCpNumber = 90000;
+    let maxCpNumber = 99999;
+
+    let CpNumber = Math.floor(Math.random() * (maxCpNumber - minCpNumber + 1)) + minCpNumber;
+
+
+    document.getElementById('codeCP').innerHTML = CpNumber;
+
+    
+
+    
+
 
  
 
