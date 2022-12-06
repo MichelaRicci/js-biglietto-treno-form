@@ -14,24 +14,37 @@
     <!-- js -->
     <script defer src="js/script.js"></script>
 </head>
-<body>
-    <div class="border">
-        <div>
-            <label for="kmTrip">Quanti chilometri vorresti percorrere?</label>
-            <input id="kmTrip" type="number" name="kmTrip" value="" placeholder="Km">
-        </div>
-        <div class="border">
-            <label for="userAge">Età</label>
-            <select id="userAge" name="userAge">
+<body class="bg-success text-center">
+    <div>
+        <h2 class="text-uppercase text-white fw-bold py-4">Calcola il prezzo del tuo biglietto</h2>
 
-                <option value="young">Minorenne</option>
-                <option value="senior">Over 65</option>
-                <option value="">Maggiorenne</option>
+        <form>
+            <div class="row row-cols-3 justify-content-around">
+                <div class="col">
+                    <label class="d-block" for="name">Nome e cognome</label>
+                    <input id="name" type="text" name="name" value="" placeholder="Inserisci il tuo nome">
+                </div>
+                <div class="col">
+                    <label class="d-block" for="kmTrip">Km da percorrere</label>
+                    <input id="kmTrip" type="number" name="kmTrip" value="" placeholder="Km">
+                </div>
+                <div class="col">
+                    <label class="d-block" for="userAge">Fascia d'età</label>
+                    <select id="userAge" name="userAge">
 
-            </select>
-        </div>
+                        <option value="young">Minorenne</option>
+                        <option value="senior">Over 65</option>
+                        <option value="">Maggiorenne</option>
 
-        <button id="ticketGenerator" type="button" name="ticketGenerator">Crea</button>
+                    </select>
+                </div>  
+            </div>
+
+            <button id="ticketGenerator" type="button" name="ticketGenerator">Crea</button>
+            <button id="cancel" type="button" name="cancel">Annulla</button>
+         
+        </form>
+     
     </div>
 
 
