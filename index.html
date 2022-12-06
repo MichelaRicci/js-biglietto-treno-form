@@ -14,23 +14,23 @@
     <!-- js -->
     <script defer src="js/script.js"></script>
 </head>
-<body class="bg-success text-center">
+<body class="bg-success text-center ">
     <div>
         <h2 class="text-uppercase text-white fw-bold py-4">Calcola il prezzo del tuo biglietto</h2>
 
-        <form>
+        <form class="container bg-white rounded-4">
             <div class="row row-cols-3 justify-content-around">
-                <div class="col">
-                    <label class="d-block" for="name">Nome e cognome</label>
-                    <input id="name" type="text" name="name" value="" placeholder="Inserisci il tuo nome">
+                <div class="col py-4">
+                    <label class="d-block pb-3 text-success" for="name">Nome e cognome</label>
+                    <input class="border-success rounded-1" id="name" type="text" name="name" value="" placeholder="Inserisci il tuo nome">
                 </div>
-                <div class="col">
-                    <label class="d-block" for="kmTrip">Km da percorrere</label>
-                    <input id="kmTrip" type="number" name="kmTrip" value="" placeholder="Km">
+                <div class="col py-4">
+                    <label class="d-block pb-3 text-success" for="kmTrip">Km da percorrere</label>
+                    <input class="border-success rounded-1" id="kmTrip" type="number" name="kmTrip" value="" placeholder="Km">
                 </div>
-                <div class="col">
-                    <label class="d-block" for="userAge">Fascia d'età</label>
-                    <select id="userAge" name="userAge">
+                <div class="col py-4">
+                    <label class="d-block pb-3 text-success" for="userAge">Fascia d'età</label>
+                    <select class="border-success rounded-1" id="userAge" name="userAge">
 
                         <option value="young">Minorenne</option>
                         <option value="senior">Over 65</option>
@@ -40,8 +40,11 @@
                 </div>  
             </div>
 
-            <button id="ticketGenerator" type="button" name="ticketGenerator">Crea</button>
-            <button id="cancel" type="button" name="cancel">Annulla</button>
+            <div class="py-3">
+
+                <button class="px-2 mx-2 text-success fw-bold rounded-1" id="ticketGenerator" type="button" name="ticketGenerator">Genera</button>
+                <button class="px-2 mx-2 text-success fw-bold rounded-1" id="cancel" type="button" name="cancel">Annulla</button>
+            </div>
          
         </form>
      
