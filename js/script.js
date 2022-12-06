@@ -18,6 +18,8 @@ const ticketGenerator = document.getElementById('ticketGenerator');
 
 ticketGenerator.addEventListener("click", function() {
 
+    const name = document.getElementById('name').value;
+
     const kmTrip = document.getElementById('kmTrip').value;
 
     const userAge = document.getElementById('userAge').value;
@@ -26,11 +28,16 @@ ticketGenerator.addEventListener("click", function() {
 
 
     if (userAge == "young") {
-        priceTrip = (priceTrip * 0.8).toFixed(2);
+        priceTrip = (priceTrip * 0.8).toFixed(2) + "€";
     } else if (userAge == "senior") {
         priceTrip = (priceTrip * 0.6).toFixed(2);
     }       
     
     console.log(priceTrip);
+
+
+    document.getElementById('passenger').innerHTML = name;
+    document.getElementById('priceTrip').innerHTML = priceTrip;
+
 
 })
